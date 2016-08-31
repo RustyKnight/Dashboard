@@ -16,6 +16,7 @@
 		1279C5011D7692870057CB18 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5001D7692870057CB18 /* UIColorExtensions.swift */; };
 		1279C5031D7692B50057CB18 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5021D7692B50057CB18 /* GeneralExtensions.swift */; };
 		1279C5051D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */; };
+		70C6BA751D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1279C5001D7692870057CB18 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		1279C5021D7692B50057CB18 /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSatelliteCollectionViewCell.swift; sourceTree = "<group>"; };
+		70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewVerticalStackLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1279C5001D7692870057CB18 /* UIColorExtensions.swift */,
 				1279C4FE1D768F800057CB18 /* WireButton.swift */,
 				1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */,
+				70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -108,7 +111,8 @@
 				TargetAttributes = {
 					1279C4E61D768D880057CB18 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 337Z8P6WA4;
+						DevelopmentTeam = YWXH886EY3;
+						DevelopmentTeamName = "Shane Whitehead";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +157,7 @@
 				1279C5051D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift in Sources */,
 				1279C4FF1D768F800057CB18 /* WireButton.swift in Sources */,
 				1279C4FD1D768DD10057CB18 /* CollectionViewController.swift in Sources */,
+				70C6BA751D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift in Sources */,
 				1279C4EB1D768D880057CB18 /* AppDelegate.swift in Sources */,
 				1279C5011D7692870057CB18 /* UIColorExtensions.swift in Sources */,
 			);
@@ -318,6 +323,7 @@
 				1279C4FB1D768D880057CB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
