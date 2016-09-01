@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,7 +10,7 @@
         <scene sceneID="kKk-z9-H8z">
             <objects>
                 <collectionViewController id="gex-pd-xSm" customClass="CollectionViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="HbW-uJ-wz0">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HbW-uJ-wz0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -21,83 +20,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell.networkSatelliteMode" id="x1b-Yb-BqR" customClass="NetworkSatelliteCollectionViewCell" customModule="Dashboard" customModuleProvider="target">
-                                <rect key="frame" x="34" y="0.0" width="308" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="308" height="134"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-2K-VBO">
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="JUs-nL-O5I"/>
-                                                <constraint firstAttribute="width" constant="50" id="go3-B8-NCR"/>
-                                                <constraint firstAttribute="width" constant="50" id="ku7-ei-Myo"/>
-                                                <constraint firstAttribute="height" constant="50" id="yjP-yH-zy5"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Registered, home network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuo-x6-vZx">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ggv-ZG-JLO">
-                                            <segments>
-                                                <segment title="Voice"/>
-                                                <segment title="Data"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="modeStateChanged:" destination="x1b-Yb-BqR" eventType="valueChanged" id="lbJ-cx-tZZ"/>
-                                            </connections>
-                                        </segmentedControl>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-a0-kgX" customClass="WireButton" customModule="Dashboard" customModuleProvider="target">
-                                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <inset key="contentEdgeInsets" minX="18" minY="4" maxX="18" maxY="4"/>
-                                            <state key="normal" title="Deactivate">
-                                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="emphasized" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <action selector="dataModeChanged:" destination="x1b-Yb-BqR" eventType="touchUpInside" id="hx9-8i-fUO"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </view>
-                                <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="2zh-2K-VBO" firstAttribute="leading" secondItem="x1b-Yb-BqR" secondAttribute="leadingMargin" constant="8" id="1ZO-uf-FZg"/>
-                                    <constraint firstItem="Fu4-a0-kgX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2zh-2K-VBO" secondAttribute="trailing" priority="999" constant="8" id="6IK-h7-vKa"/>
-                                    <constraint firstItem="Cuo-x6-vZx" firstAttribute="trailing" secondItem="x1b-Yb-BqR" secondAttribute="trailingMargin" constant="-8" id="8xV-Hz-fXy"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="Ggv-ZG-JLO" secondAttribute="bottom" constant="8" id="E7j-DC-dC3"/>
-                                    <constraint firstItem="Ggv-ZG-JLO" firstAttribute="top" secondItem="Cuo-x6-vZx" secondAttribute="bottom" constant="8" id="Fek-0q-68b"/>
-                                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Ggv-ZG-JLO" secondAttribute="trailing" priority="999" constant="-8" id="RMO-95-p1b"/>
-                                    <constraint firstItem="Cuo-x6-vZx" firstAttribute="leading" secondItem="2zh-2K-VBO" secondAttribute="trailing" constant="8" id="SKy-5M-dfo"/>
-                                    <constraint firstItem="Fu4-a0-kgX" firstAttribute="centerX" secondItem="x1b-Yb-BqR" secondAttribute="centerX" id="T1G-S2-kjv"/>
-                                    <constraint firstItem="2zh-2K-VBO" firstAttribute="top" secondItem="x1b-Yb-BqR" secondAttribute="topMargin" constant="8" id="clZ-Wz-vF2"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="Fu4-a0-kgX" secondAttribute="bottom" constant="8" id="i2d-kw-Jl3"/>
-                                    <constraint firstItem="Cuo-x6-vZx" firstAttribute="top" secondItem="x1b-Yb-BqR" secondAttribute="topMargin" constant="8" id="lea-S8-ZJk"/>
-                                    <constraint firstItem="Ggv-ZG-JLO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2zh-2K-VBO" secondAttribute="trailing" priority="999" constant="8" id="o0Z-vj-oDe"/>
-                                    <constraint firstItem="Fu4-a0-kgX" firstAttribute="top" secondItem="Ggv-ZG-JLO" secondAttribute="bottom" constant="8" id="o6D-wt-zIb"/>
-                                    <constraint firstItem="Ggv-ZG-JLO" firstAttribute="centerX" secondItem="x1b-Yb-BqR" secondAttribute="centerX" id="uWz-aQ-eot"/>
-                                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Fu4-a0-kgX" secondAttribute="trailing" priority="999" constant="-8" id="zlW-NP-Ite"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataActiveToBottom" destination="i2d-kw-Jl3" id="Hmo-Bx-vu4"/>
-                                    <outlet property="modeButton" destination="Fu4-a0-kgX" id="9FK-9p-KXO"/>
-                                    <outlet property="modeToggle" destination="Ggv-ZG-JLO" id="Jv1-I2-L9D"/>
-                                    <outlet property="segmentToBottom" destination="E7j-DC-dC3" id="7Yb-0Z-Icv"/>
-                                    <outlet property="stateLabel" destination="Cuo-x6-vZx" id="g2c-Wl-7VA"/>
-                                    <outlet property="verticalSpacingBetweenButtons" destination="o6D-wt-zIb" id="BaX-SG-FSx"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="gex-pd-xSm" id="9qR-2O-0po"/>
                             <outlet property="delegate" destination="gex-pd-xSm" id="Nqb-hx-3fG"/>
@@ -108,24 +31,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hg-0p-gE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1256.8" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ep9-Ha-lbt">
-            <objects>
-                <viewController id="kuX-dc-5Zr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o5p-W3-l8l"/>
-                        <viewControllerLayoutGuide type="bottom" id="5R6-AM-LKF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CIP-zA-z8I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ILm-LN-5rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2044" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sn7-1x-9yK">
@@ -146,7 +51,4 @@
             <point key="canvasLocation" x="317.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="satellite" width="25" height="25"/>
-    </resources>
 </document>

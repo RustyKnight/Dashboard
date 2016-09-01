@@ -13,7 +13,7 @@ enum NetworkMode {
     case data
 }
 
-protocol NetworkSatelliteMode {
+protocol NetworkSatelliteMode: DashboardData {
     var state: String {get}
     var mode: NetworkMode {get}
     var dataMode: Bool {get}
@@ -38,6 +38,16 @@ struct DefaultNetworkSatelliteMode: NetworkSatelliteMode {
     init(from: NetworkSatelliteMode) {
         self.init(state: from.state, mode: from.mode, dataMode: from.dataMode)
     }
+    
+    func isEqual(to: DashboardData) -> Bool {
+        guard let to = to as? NetworkSatelliteMode else {
+            return false
+        }
+        
+        return state == to.state &&
+            mode == to.mode &&
+            dataMode == to.dataMode
+    }
 }
 
 func ==(lhs: NetworkSatelliteMode, rhs: NetworkSatelliteMode) -> Bool {
@@ -48,15 +58,11 @@ func ==(lhs: NetworkSatelliteMode, rhs: NetworkSatelliteMode) -> Bool {
 }
 
 
-class NetworkSatelliteCollectionViewCell: UICollectionViewCell {
+class NetworkSatelliteCollectionViewCell: DashboardCollectionViewCell {
     
-    @IBOutlet weak var modeButton: WireButton!
+    @IBOutlet weak var dataModeButton: WireButton!
     @IBOutlet weak var modeToggle: UISegmentedControl!
     @IBOutlet weak var stateLabel: UILabel!
-    
-    @IBOutlet var verticalSpacingBetweenButtons: NSLayoutConstraint!
-    @IBOutlet var dataActiveToBottom: NSLayoutConstraint!
-    @IBOutlet var segmentToBottom: NSLayoutConstraint!
     
     let modeState: [NetworkMode: Int] = [
         .voice: 0,
@@ -72,53 +78,28 @@ class NetworkSatelliteCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.cornerRadius = 20
-        verticalSpacingBetweenButtons.isActive = false
-        dataActiveToBottom.isActive = false
-        segmentToBottom.isActive = false
     }
 
-    func configure(with mode: NetworkSatelliteMode, delegate: NetworkSatelliteModeDelegate) {
+    func configure(with mode: NetworkSatelliteMode, delegate: NetworkSatelliteModeDelegate?) {
         self.delegate = delegate
         networkSatelliteMode = mode
         
         stateLabel.text = mode.state
         modeToggle.selectedSegmentIndex = modeState[mode.mode]!
-        modeButton.isHidden = mode.mode == .voice
+        dataModeButton.isHidden = mode.mode == .voice
         
-        verticalSpacingBetweenButtons.isActive = mode.mode == .data
-        dataActiveToBottom.isActive = mode.mode == .data
-        segmentToBottom.isActive = mode.mode == .voice
-        
-        print("VericalSpacing = \(verticalSpacingBetweenButtons.isActive)")
-        print("buttonToBottom = \(dataActiveToBottom.isActive)")
-        print("segmentToBottom = \(segmentToBottom.isActive)")
-        
-        modeButton.emphasized = true
+        dataModeButton.emphasized = true
         if mode.dataMode {
-            modeButton.setTitle("Deactivate", for: [])
-            modeButton.setTitleColor(UIColor.red, for: [])
+            dataModeButton.setTitle("Deactivate", for: [])
+            dataModeButton.setTitleColor(UIColor.red, for: [])
         } else {
-            modeButton.setTitle("Activate", for: [])
-            modeButton.setTitleColor(UIColor.green, for: [])
+            dataModeButton.setTitle("Activate", for: [])
+            dataModeButton.setTitleColor(UIColor.green, for: [])
         }
-        heightCalulated = false
-    }
-    
-    var heightCalulated: Bool = false
-    
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        setNeedsLayout()
-        layoutIfNeeded()
-        let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
-        var newFrame = layoutAttributes.frame
-        newFrame.size = size
-        layoutAttributes.frame = newFrame
-        heightCalulated = true
-        return layoutAttributes
     }
     
     @IBAction func dataModeChanged(_ sender: AnyObject) {
+        print("Data changed")
         guard let networkSatelliteMode = networkSatelliteMode else {
             return
         }
@@ -126,6 +107,7 @@ class NetworkSatelliteCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func modeStateChanged(_ sender: AnyObject) {
+        print("Mode changed")
         guard let networkSatelliteMode = networkSatelliteMode else {
             return
         }

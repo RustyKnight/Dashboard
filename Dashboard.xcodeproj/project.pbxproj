@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1269D5E01D779C910074A407 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5DF1D779C910074A407 /* DashboardCell.swift */; };
+		1269D5E61D77B5550074A407 /* NetworkSatelliteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5E41D77B5550074A407 /* NetworkSatelliteCollectionViewCell.xib */; };
+		1269D5EA1D77B9DD0074A407 /* RestricitionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5E81D77B9DD0074A407 /* RestricitionsCollectionViewCell.swift */; };
+		1269D5EB1D77B9DD0074A407 /* RestricitionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5E91D77B9DD0074A407 /* RestricitionsCollectionViewCell.xib */; };
+		1269D5ED1D77BB950074A407 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5EC1D77BB950074A407 /* DashboardCollectionViewCell.swift */; };
+		1269D5F01D77D4D80074A407 /* SAPACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5EE1D77D4D80074A407 /* SAPACollectionViewCell.swift */; };
+		1269D5F11D77D4D80074A407 /* SAPACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5EF1D77D4D80074A407 /* SAPACollectionViewCell.xib */; };
+		1269D5F41D77DDAA0074A407 /* SystemAlertsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5F21D77DDAA0074A407 /* SystemAlertsCollectionViewCell.swift */; };
+		1269D5F51D77DDAA0074A407 /* SystemAlertsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5F31D77DDAA0074A407 /* SystemAlertsCollectionViewCell.xib */; };
+		1269D5F81D77F6C60074A407 /* DiagnosticsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5F61D77F6C60074A407 /* DiagnosticsCollectionViewCell.swift */; };
+		1269D5F91D77F6C60074A407 /* DiagnosticsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5F71D77F6C60074A407 /* DiagnosticsCollectionViewCell.xib */; };
+		1269D5FC1D77F9360074A407 /* ConnectionControlCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1269D5FA1D77F9360074A407 /* ConnectionControlCollectionViewCell.swift */; };
+		1269D5FD1D77F9360074A407 /* ConnectionControlCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1269D5FB1D77F9360074A407 /* ConnectionControlCollectionViewCell.xib */; };
 		1279C4EB1D768D880057CB18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C4EA1D768D880057CB18 /* AppDelegate.swift */; };
 		1279C4F01D768D880057CB18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1279C4EE1D768D880057CB18 /* Main.storyboard */; };
 		1279C4F21D768D880057CB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1279C4F11D768D880057CB18 /* Assets.xcassets */; };
@@ -16,10 +29,22 @@
 		1279C5011D7692870057CB18 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5001D7692870057CB18 /* UIColorExtensions.swift */; };
 		1279C5031D7692B50057CB18 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5021D7692B50057CB18 /* GeneralExtensions.swift */; };
 		1279C5051D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */; };
-		70C6BA751D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1269D5DF1D779C910074A407 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		1269D5E41D77B5550074A407 /* NetworkSatelliteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkSatelliteCollectionViewCell.xib; sourceTree = "<group>"; };
+		1269D5E81D77B9DD0074A407 /* RestricitionsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestricitionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5E91D77B9DD0074A407 /* RestricitionsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestricitionsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1269D5EC1D77BB950074A407 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5EE1D77D4D80074A407 /* SAPACollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPACollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5EF1D77D4D80074A407 /* SAPACollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPACollectionViewCell.xib; sourceTree = "<group>"; };
+		1269D5F21D77DDAA0074A407 /* SystemAlertsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAlertsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5F31D77DDAA0074A407 /* SystemAlertsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemAlertsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1269D5F61D77F6C60074A407 /* DiagnosticsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosticsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5F71D77F6C60074A407 /* DiagnosticsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiagnosticsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1269D5FA1D77F9360074A407 /* ConnectionControlCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionControlCollectionViewCell.swift; sourceTree = "<group>"; };
+		1269D5FB1D77F9360074A407 /* ConnectionControlCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionControlCollectionViewCell.xib; sourceTree = "<group>"; };
 		1279C4E71D768D880057CB18 /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1279C4EA1D768D880057CB18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1279C4EF1D768D880057CB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +56,6 @@
 		1279C5001D7692870057CB18 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		1279C5021D7692B50057CB18 /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSatelliteCollectionViewCell.swift; sourceTree = "<group>"; };
-		70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewVerticalStackLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1269D5E71D77B8F10074A407 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1269D5EC1D77BB950074A407 /* DashboardCollectionViewCell.swift */,
+				1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */,
+				1269D5E41D77B5550074A407 /* NetworkSatelliteCollectionViewCell.xib */,
+				1269D5E81D77B9DD0074A407 /* RestricitionsCollectionViewCell.swift */,
+				1269D5E91D77B9DD0074A407 /* RestricitionsCollectionViewCell.xib */,
+				1269D5EE1D77D4D80074A407 /* SAPACollectionViewCell.swift */,
+				1269D5EF1D77D4D80074A407 /* SAPACollectionViewCell.xib */,
+				1269D5F21D77DDAA0074A407 /* SystemAlertsCollectionViewCell.swift */,
+				1269D5F31D77DDAA0074A407 /* SystemAlertsCollectionViewCell.xib */,
+				1269D5F61D77F6C60074A407 /* DiagnosticsCollectionViewCell.swift */,
+				1269D5F71D77F6C60074A407 /* DiagnosticsCollectionViewCell.xib */,
+				1269D5FA1D77F9360074A407 /* ConnectionControlCollectionViewCell.swift */,
+				1269D5FB1D77F9360074A407 /* ConnectionControlCollectionViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		1279C4DE1D768D880057CB18 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +108,17 @@
 		1279C4E91D768D880057CB18 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				1269D5E71D77B8F10074A407 /* Cells */,
 				1279C4EA1D768D880057CB18 /* AppDelegate.swift */,
 				1279C4F11D768D880057CB18 /* Assets.xcassets */,
 				1279C4FC1D768DD10057CB18 /* CollectionViewController.swift */,
+				1269D5DF1D779C910074A407 /* DashboardCell.swift */,
 				1279C5021D7692B50057CB18 /* GeneralExtensions.swift */,
 				1279C4F61D768D880057CB18 /* Info.plist */,
 				1279C4F31D768D880057CB18 /* LaunchScreen.storyboard */,
 				1279C4EE1D768D880057CB18 /* Main.storyboard */,
 				1279C5001D7692870057CB18 /* UIColorExtensions.swift */,
 				1279C4FE1D768F800057CB18 /* WireButton.swift */,
-				1279C5041D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift */,
-				70C6BA741D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -111,7 +155,7 @@
 				TargetAttributes = {
 					1279C4E61D768D880057CB18 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = YWXH886EY3;
+						DevelopmentTeam = 337Z8P6WA4;
 						DevelopmentTeamName = "Shane Whitehead";
 						ProvisioningStyle = Automatic;
 					};
@@ -140,9 +184,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1269D5F51D77DDAA0074A407 /* SystemAlertsCollectionViewCell.xib in Resources */,
 				1279C4F51D768D880057CB18 /* LaunchScreen.storyboard in Resources */,
 				1279C4F21D768D880057CB18 /* Assets.xcassets in Resources */,
+				1269D5F91D77F6C60074A407 /* DiagnosticsCollectionViewCell.xib in Resources */,
 				1279C4F01D768D880057CB18 /* Main.storyboard in Resources */,
+				1269D5F11D77D4D80074A407 /* SAPACollectionViewCell.xib in Resources */,
+				1269D5FD1D77F9360074A407 /* ConnectionControlCollectionViewCell.xib in Resources */,
+				1269D5E61D77B5550074A407 /* NetworkSatelliteCollectionViewCell.xib in Resources */,
+				1269D5EB1D77B9DD0074A407 /* RestricitionsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,12 +204,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1279C5031D7692B50057CB18 /* GeneralExtensions.swift in Sources */,
+				1269D5EA1D77B9DD0074A407 /* RestricitionsCollectionViewCell.swift in Sources */,
 				1279C5051D76965B0057CB18 /* NetworkSatelliteCollectionViewCell.swift in Sources */,
+				1269D5F41D77DDAA0074A407 /* SystemAlertsCollectionViewCell.swift in Sources */,
 				1279C4FF1D768F800057CB18 /* WireButton.swift in Sources */,
+				1269D5F81D77F6C60074A407 /* DiagnosticsCollectionViewCell.swift in Sources */,
+				1269D5ED1D77BB950074A407 /* DashboardCollectionViewCell.swift in Sources */,
 				1279C4FD1D768DD10057CB18 /* CollectionViewController.swift in Sources */,
-				70C6BA751D76E16D001581E5 /* CollectionViewVerticalStackLayout.swift in Sources */,
 				1279C4EB1D768D880057CB18 /* AppDelegate.swift in Sources */,
+				1269D5E01D779C910074A407 /* DashboardCell.swift in Sources */,
 				1279C5011D7692870057CB18 /* UIColorExtensions.swift in Sources */,
+				1269D5FC1D77F9360074A407 /* ConnectionControlCollectionViewCell.swift in Sources */,
+				1269D5F01D77D4D80074A407 /* SAPACollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

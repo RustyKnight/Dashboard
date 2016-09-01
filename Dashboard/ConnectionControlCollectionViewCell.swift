@@ -8,7 +8,19 @@
 
 import UIKit
 
-class ConnectionControlCollectionViewCell: UICollectionViewCell {
+protocol ConnectionControl: DashboardData {
+}
+
+struct DefaultConnectionControl: ConnectionControl {
+    func isEqual(to: DashboardData) -> Bool {
+        guard to is ConnectionControl else {
+            return false
+        }        
+        return true
+    }
+}
+
+class ConnectionControlCollectionViewCell: DashboardCollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

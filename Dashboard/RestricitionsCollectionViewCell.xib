@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RestricitionsCollectionViewCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell.restricitions" id="gTV-IL-0wX" customClass="RestricitionsCollectionViewCell" customModule="Dashboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="157"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="451" height="157"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-mO-rJO">
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="40Z-E4-32d">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1f-DN-Obw">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="7s2-zr-wRe"/>
+                                            <constraint firstAttribute="width" constant="25" id="La5-JY-9de"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="dashboard-feature-restriction-locked"/>
+                                        <connections>
+                                            <action selector="restrictionStateChanged:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zTz-cy-apY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMx-Hh-3Dy">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="meX-aW-KKR">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-h5-vXr">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="5CI-dq-vCI"/>
+                                            <constraint firstAttribute="width" constant="25" id="hLE-M9-5gb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="dashboard-feature-restriction-locked"/>
+                                        <connections>
+                                            <action selector="restrictionStateChanged:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lO4-QH-cYs"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLj-o1-Jw5">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wVW-dS-YjI">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZs-Ce-Uxv">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="0Cs-pV-r5A"/>
+                                            <constraint firstAttribute="width" constant="25" id="Lhv-vK-RhL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="dashboard-feature-restriction-unlocked"/>
+                                        <connections>
+                                            <action selector="restrictionStateChanged:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5rM-v9-Med"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadband" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWg-cg-auh">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
             </view>
+            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qzd-mO-rJO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fo9-77-Kwr"/>
+                <constraint firstItem="qzd-mO-rJO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="wGd-nK-5iV"/>
+                <constraint firstAttribute="bottom" secondItem="qzd-mO-rJO" secondAttribute="bottom" constant="8" id="xAm-bt-qaR"/>
+            </constraints>
+            <size key="customSize" width="451" height="157"/>
+            <connections>
+                <outlet property="broadbandDataLockButton" destination="yZs-Ce-Uxv" id="nLy-e6-4rn"/>
+                <outlet property="callLockButton" destination="2Hv-h5-vXr" id="jkx-FL-sQi"/>
+                <outlet property="smsLockButton" destination="g1f-DN-Obw" id="H8O-BR-JIJ"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="107.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="dashboard-feature-restriction-locked" width="25" height="25"/>
+        <image name="dashboard-feature-restriction-unlocked" width="25" height="25"/>
+    </resources>
 </document>
